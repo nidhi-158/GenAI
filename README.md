@@ -137,8 +137,3 @@ streamlit run app.py
 - Deployment on Streamlit Cloud
 
 ---
-
-## Author
-
-Nidhi
-```
