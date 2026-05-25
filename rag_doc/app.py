@@ -20,7 +20,6 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 ## load the GROQ And OpenAI API KEY 
 groq_api_key=os.getenv('GROQ_API_KEY')
-os.environ["GOOGLE_API_KEY"]=st.secrets("GOOGLE_API_KEY")
 
 st.title("RAG Document Q&A")
 
@@ -47,7 +46,7 @@ def vector_embedding():
             model_name="sentence-transformers/all-MiniLM-L6-v2"
         )
 
-        st.session_state.loader = PyPDFDirectoryLoader("./docs")
+        st.session_state.loader = PyPDFDirectoryLoader("./us_census")
 
         # Load PDFs
         st.session_state.docs = st.session_state.loader.load()
