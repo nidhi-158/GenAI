@@ -48,7 +48,7 @@ def vector_embedding():
             model_name="sentence-transformers/all-MiniLM-L6-v2"
         )
 
-        st.session_state.loader = PyPDFDirectoryLoader("./us_census")
+        st.session_state.loader = PyPDFDirectoryLoader("us_census")
 
         # Load PDFs
         st.session_state.docs = st.session_state.loader.load()
