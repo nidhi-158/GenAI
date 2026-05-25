@@ -18,8 +18,8 @@ warnings.filterwarnings("ignore")
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 
-## load the GROQ And OpenAI API KEY 
-os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+## load the GROQ 
+#os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 
 groq_api_key = st.secrets["GROQ_API_KEY"]
 
